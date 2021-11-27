@@ -13,3 +13,5 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2)
 knn = KNeighborsClassifier()
 knn.fit(X_train, y_train)
 
+# pickling
+pickle.dump(knn, open('example_weights_knn.pkl', "wb"))
